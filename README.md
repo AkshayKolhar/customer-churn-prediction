@@ -322,6 +322,15 @@ Prediction: Yes
 - Streamlit Application Development
 - Git and GitHub Project Management
 
+## 🌐 Live Demo
+
+🚀 **Project Status:** Completed Successfully
+
+🔗 **Live Application:** https://customer-churn-prediction-qpjc7qgkwf7lsrbjrdyub6.streamlit.app/
+
+📖 **Streamlit LIve :** https://customer-churn-prediction-qpjc7qgkwf7lsrbjrdyub6.streamlit.app/
+
+
 ## Author 
 ```bash
 Akshay
