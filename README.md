@@ -53,48 +53,48 @@ The model uses customer information including:
 ---
 
 ## Machine Learning Workflow
-
-Telco Customer Churn Dataset
-            ↓
-      Data Cleaning
-            ↓
-     Feature Selection
-            ↓
-      Train-Test Split
-            ↓
-   Feature Preprocessing
-            ↓
-   ┌─────────────────────┐
-   │ Numerical Features  │
-   │    StandardScaler   │
-   └─────────────────────┘
-            +
-   ┌─────────────────────┐
-   │ Categorical Features│
-   │    OneHotEncoder    │
-   └─────────────────────┘
-            ↓
-     ColumnTransformer
-            ↓
-    Logistic Regression
-            ↓
-      Model Evaluation
-            ↓
-      Cross-Validation
-            ↓
-     Threshold Tuning
-            ↓
-     Final ML Pipeline
-            ↓
-      Save with Joblib
-            ↓
-    New Customer Input
-            ↓
-      Churn Probability
-            ↓
-     Churn Prediction
-            ↓
-    Streamlit Web App
+            
+            Telco Customer Churn Dataset
+                        ↓
+                  Data Cleaning
+                        ↓
+                 Feature Selection
+                        ↓
+                  Train-Test Split
+                        ↓
+               Feature Preprocessing
+                        ↓
+               ┌─────────────────────┐
+               │ Numerical Features  │
+               │    StandardScaler   │
+               └─────────────────────┘
+                        +
+               ┌─────────────────────┐
+               │ Categorical Features│
+               │    OneHotEncoder    │
+               └─────────────────────┘
+                        ↓
+                 ColumnTransformer
+                        ↓
+                Logistic Regression
+                        ↓
+                  Model Evaluation
+                        ↓
+                  Cross-Validation
+                        ↓
+                 Threshold Tuning
+                        ↓
+                 Final ML Pipeline
+                        ↓
+                  Save with Joblib
+                        ↓
+                New Customer Input
+                        ↓
+                  Churn Probability
+                        ↓
+                 Churn Prediction
+                        ↓
+                Streamlit Web App
 
 ## Preprocessing Workflow 
 
