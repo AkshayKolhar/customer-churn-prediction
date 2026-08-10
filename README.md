@@ -329,11 +329,6 @@ Prediction: Yes
 - Streamlit Application Development
 - Git and GitHub Project Management
 
-## Images 
-<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/74f3b256-2bcd-44bf-9b0e-98630818c0a5" />
-
-
-
 ## Author 
 ```bash
 Akshay
@@ -344,5 +339,11 @@ AI/ML Engineering Student
 
 Completed end-to-end customer churn prediction project with data preprocessing, model evaluation, cross-validation, threshold tuning, model persistence, customer prediction, and Streamlit deployment.
 
+## 🖥️ Application Interface & Prediction Results
+<img width="1903" height="896" alt="Screenshot 2026-08-10 213309" src="https://github.com/user-attachments/assets/7426b780-ab3a-4bd7-8ad0-77b6c5e9fbf9" />
+<img width="1913" height="892" alt="image" src="https://github.com/user-attachments/assets/63d98d3d-e780-4fc5-9ba1-532468ae3664" />
+## Predicton Results
+<img width="1888" height="885" alt="image" src="https://github.com/user-attachments/assets/b97a9ddc-c652-48cc-ac83-28b9f00f6db5" />
+<img width="1897" height="882" alt="image" src="https://github.com/user-attachments/assets/aa628f08-7418-4d7f-9e82-bf5ee81372b6" />
 
 
