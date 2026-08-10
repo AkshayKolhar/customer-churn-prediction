@@ -1,42 +1,33 @@
 # Customer Churn Prediction
 
-An end-to-end machine learning project that predicts whether a telecom customer is likely to churn.
+## Overview
 
-## 📌 Project Overview
+Customer Churn Prediction is an end-to-end machine learning project that predicts whether a telecom customer is likely to churn.
 
-Customer churn prediction helps companies identify customers who are likely to leave so that appropriate retention strategies can be applied.
+The project uses customer demographic, service, contract, and billing information to calculate the probability of churn and generate a final `Yes` or `No` prediction.
 
-This project builds a complete machine learning pipeline that:
+The project demonstrates the complete machine learning workflow:
 
-- Loads and cleans customer data
-- Handles missing and inconsistent values
-- Separates features and target
-- Performs train-test splitting
-- Identifies numerical and categorical features
-- Scales numerical features
-- Applies one-hot encoding to categorical features
-- Trains a Logistic Regression model
-- Evaluates model performance
-- Uses cross-validation
-- Tunes the classification threshold
-- Saves the complete preprocessing and model pipeline
-- Predicts churn probability for new customers
-- Provides a Streamlit web application
+**Data → Preprocessing → Training → Evaluation → Validation → Threshold Tuning → Model Saving → Prediction → Streamlit Application**
 
 ---
 
-## 📊 Dataset
+## Dataset
 
-This project uses the **Telco Customer Churn dataset**.
+The project uses the **Telco Customer Churn** dataset.
 
 The target variable is:
 
-- `Yes` → Customer churned
-- `No` → Customer did not churn
+- `Churn = Yes` → Customer churned
+- `Churn = No` → Customer did not churn
 
-The dataset contains customer demographic, service, contract, and billing information.
+The dataset contains customer information related to demographics, services, contracts, and billing.
 
-### Main Features
+---
+
+## Features Used
+
+The model uses customer information including:
 
 - Customer ID
 - Gender
@@ -61,41 +52,46 @@ The dataset contains customer demographic, service, contract, and billing inform
 
 ---
 
-## 🔄 Machine Learning Workflow
+## Machine Learning Workflow
 
-```text
-Raw Dataset
-     ↓
-Data Cleaning
-     ↓
-Train / Test Split
-     ↓
-Feature Identification
-     ↓
-Numerical Feature Scaling
-     ↓
-Categorical One-Hot Encoding
-     ↓
-Logistic Regression
-     ↓
-Model Evaluation
-     ↓
-Cross-Validation
-     ↓
-Threshold Tuning
-     ↓
-Final Pipeline
-     ↓
-Save Pipeline
-     ↓
-New Customer Prediction
-     ↓
-Streamlit Application
-
-
-
-Project Status
-
-Completed end-to-end customer churn prediction project with data preprocessing, model evaluation, cross-validation, threshold tuning, model persistence, customer prediction, and Streamlit deployment.
-
-
+Telco Customer Churn Dataset
+            ↓
+      Data Cleaning
+            ↓
+     Feature Selection
+            ↓
+      Train-Test Split
+            ↓
+   Feature Preprocessing
+            ↓
+   ┌─────────────────────┐
+   │ Numerical Features  │
+   │    StandardScaler   │
+   └─────────────────────┘
+            +
+   ┌─────────────────────┐
+   │ Categorical Features│
+   │    OneHotEncoder    │
+   └─────────────────────┘
+            ↓
+     ColumnTransformer
+            ↓
+    Logistic Regression
+            ↓
+      Model Evaluation
+            ↓
+      Cross-Validation
+            ↓
+     Threshold Tuning
+            ↓
+     Final ML Pipeline
+            ↓
+      Save with Joblib
+            ↓
+    New Customer Input
+            ↓
+      Churn Probability
+            ↓
+     Churn Prediction
+            ↓
+    Streamlit Web App
