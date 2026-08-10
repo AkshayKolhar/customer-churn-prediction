@@ -98,3 +98,52 @@ The model uses customer information including:
 
 ## Preprocessing Workflow 
 
+            Numerical Features
+                    ↓
+            StandardScaler
+                    ↓
+            Scaled Numerical Features
+            
+            Categorical Features
+                    ↓
+            OneHotEncoder
+                    ↓
+            Encoded Categorical Features
+            
+            Both
+                    ↓
+            ColumnTransformer
+
+## Machine Learning Pipeline
+            
+            Raw Customer Data
+                    ↓
+            ColumnTransformer
+                    ↓
+             ┌──────────────────────┐
+             │ Numerical Features   │
+             │     StandardScaler   │
+             └──────────────────────┘
+                    +
+             ┌──────────────────────┐
+             │ Categorical Features │
+             │     OneHotEncoder    │
+             └──────────────────────┘
+                    ↓
+            Logistic Regression
+                    ↓
+            Churn Probability
+                    ↓
+            Final Prediction
+
+##Model
+
+The final model used in the project is Logistic Regression.
+
+Logistic Regression is suitable for this binary classification problem because the target contains two possible outcomes:
+
+Yes → Customer churn
+No  → Customer does not churn
+
+The model produces a probability of churn, which can then be converted into a final classification using a selected threshold.
+
