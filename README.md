@@ -329,6 +329,8 @@ Prediction: Yes
 - Streamlit Application Development
 - Git and GitHub Project Management
 
+## Images 
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/74f3b256-2bcd-44bf-9b0e-98630818c0a5" />
 
 
 
