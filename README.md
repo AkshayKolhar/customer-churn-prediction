@@ -11,6 +11,13 @@ The project demonstrates the complete machine learning workflow:
 **Data → Preprocessing → Training → Evaluation → Validation → Threshold Tuning → Model Saving → Prediction → Streamlit Application**
 
 ---
+## 🌐 Live Demo
+
+🚀 **Project Status:** Completed Successfully
+
+🔗 **Live Application:** https://customer-churn-prediction-qpjc7qgkwf7lsrbjrdyub6.streamlit.app/
+
+📖 **Streamlit LIve :** https://customer-churn-prediction-qpjc7qgkwf7lsrbjrdyub6.streamlit.app/
 
 ## Dataset
 
@@ -322,13 +329,7 @@ Prediction: Yes
 - Streamlit Application Development
 - Git and GitHub Project Management
 
-## 🌐 Live Demo
 
-🚀 **Project Status:** Completed Successfully
-
-🔗 **Live Application:** https://customer-churn-prediction-qpjc7qgkwf7lsrbjrdyub6.streamlit.app/
-
-📖 **Streamlit LIve :** https://customer-churn-prediction-qpjc7qgkwf7lsrbjrdyub6.streamlit.app/
 
 
 ## Author 
