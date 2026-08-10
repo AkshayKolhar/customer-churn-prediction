@@ -136,7 +136,7 @@ The model uses customer information including:
                     ↓
             Final Prediction
 
-##Model
+## Model
 
 The final model used in the project is Logistic Regression.
 
@@ -146,4 +146,154 @@ Yes → Customer churn
 No  → Customer does not churn
 
 The model produces a probability of churn, which can then be converted into a final classification using a selected threshold.
+
+## Model Evaluation
+
+The model is evaluated using several classification metrics:
+
+Accuracy
+Precision
+Recall
+F1 Score
+Confusion Matrix
+Classification Report
+
+## Classification Threshold
+
+            Churn Probability
+                    ↓
+               Compare with
+                Threshold
+                    ↓
+             ┌───────────────┐
+             │ Probability   │
+             │ >= Threshold  │
+             └───────────────┘
+                    ↓
+               Prediction: Yes
+            
+            
+             ┌───────────────┐
+             │ Probability   │
+             │ < Threshold   │
+             └───────────────┘
+                    ↓
+               Prediction: No
+
+## Model Serialization
+
+After training, the complete machine learning pipeline is saved using Joblib.
+
+The trained pipeline is stored at:
+
+model/churn_prediction.pkl
+
+## Streamlit Application
+
+The project includes an interactive Streamlit web application.
+
+The application allows users to enter customer information through a graphical interface and receive a churn prediction.
+
+The application collects information such as:
+
+            Customer ID
+            Gender
+            Senior Citizen
+            Partner
+            Dependents
+            Tenure
+            Phone Service
+            Multiple Lines
+            Internet Service
+            Online Security
+            Online Backup
+            Device Protection
+            Tech Support
+            Streaming TV
+            Streaming Movies
+            Contract
+            Paperless Billing
+            Payment Method
+            Monthly Charges
+            Total Charges
+
+After entering the customer information, the user can click Predict Churn.
+
+The application then displays:
+Churn Probability
+Final Churn Prediction
+
+Example:
+
+            Churn Probability: 0.3034
+            Prediction: Yes
+
+## Project Structure 
+
+            customer-churn-prediction/
+            │
+            ├── data/
+            │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+            │
+            ├── experiments_old/
+            │   ├── decision_tree.py
+            │   ├── k_nearest.py
+            │   ├── log_reg.py
+            │   ├── naive.py
+            │   ├── random_forest.py
+            │   └── SVM.py
+            │
+            ├── model/
+            │   └── churn_prediction.pkl
+            │
+            ├── notebooks/
+            │
+            ├── app.py
+            ├── predict.py
+            ├── train_model.py
+            ├── requirements.txt
+            ├── .gitignore
+            └── README.md
+
+## 🛠️ Technologies Used
+
+### Programming
+- **Python** — Core programming language used to build the project.
+
+### Data Processing
+- **Pandas** — Used for loading, cleaning, transforming, and managing the dataset.
+- **NumPy** — Used for numerical operations and data manipulation.
+
+### Machine Learning
+- **Scikit-learn** — Used for preprocessing, pipeline creation, Logistic Regression, model evaluation, cross-validation, and prediction.
+
+### Model Serialization
+- **Joblib** — Used to save and load the trained machine learning pipeline.
+
+### Web Application
+- **Streamlit** — Used to build the interactive customer churn prediction web application.
+
+### Development Tools
+- **Visual Studio Code** — Used as the development environment.
+- **Git** — Used for version control.
+- **GitHub** — Used to store and manage the project repository.
+
+## 🧪 Example Prediction
+
+### Example Customer Information
+
+```text
+Tenure: 12 months
+Monthly Charges: 75.50
+Total Charges: 906.00
+Contract: Month-to-month
+Internet Service: Fiber optic
+Payment Method: Electronic check
+```
+##Example Output 
+```text
+Churn Probability: 0.3034
+Prediction: Yes
+```
+
 
