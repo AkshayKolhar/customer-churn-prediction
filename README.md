@@ -296,4 +296,18 @@ Churn Probability: 0.3034
 Prediction: Yes
 ```
 
+## Machine Learning Concepts Demonstrated
+
+- Binary Classification
+- Logistic Regression
+- Data Cleaning
+- Feature Engineering
+- Train-Test Split
+- Standardization
+- One-Hot Encoding
+- ColumnTransformer
+- Scikit-learn Pipeline
+- Model Evaluation
+- Accuracy
+
 
