@@ -309,5 +309,29 @@ Prediction: Yes
 - Scikit-learn Pipeline
 - Model Evaluation
 - Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- Classification Report
+- Cross-Validation
+- Probability Prediction
+- Classification Threshold
+- Model Serialization
+- Joblib
+- Streamlit Application Development
+- Git and GitHub Project Management
+
+## Author 
+```bash
+Akshay
+AI/ML Engineering Student
+```
+
+## Project Status 
+```text
+Completed end-to-end customer churn prediction project with data preprocessing, model evaluation, cross-validation, threshold tuning, model persistence, customer prediction, and Streamlit deployment.
+```
+
 
 
