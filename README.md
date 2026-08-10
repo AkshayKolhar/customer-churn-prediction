@@ -329,9 +329,8 @@ AI/ML Engineering Student
 ```
 
 ## Project Status 
-```text
+
 Completed end-to-end customer churn prediction project with data preprocessing, model evaluation, cross-validation, threshold tuning, model persistence, customer prediction, and Streamlit deployment.
-```
 
 
 
