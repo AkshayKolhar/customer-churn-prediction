@@ -156,14 +156,28 @@ The model produces a probability of churn, which can then be converted into a fi
 
 ## Model Evaluation
 
-The model is evaluated using several classification metrics:
+The Customer Churn Prediction model was evaluated using multiple classification metrics:
 
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-Classification Report
+- **Accuracy:** 82.19%
+- **Precision:** 68.71%
+- **F1 Score:** 64.09%
+
+### Confusion Matrix
+
+```text
+[[934 102]
+ [149 224]]
+```
+### Classification Report
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| No    | 0.86      | 0.90   | 0.88     | 1036    |
+| Yes   | 0.69      | 0.60   | 0.64     | 373     |
+| **Accuracy** | | | **0.82** | **1409** |
+| **Macro Avg** | **0.77** | **0.75** | **0.76** | **1409** |
+| **Weighted Avg** | **0.82** | **0.82** | **0.82** | **1409** |
+
 
 ## Classification Threshold
 
